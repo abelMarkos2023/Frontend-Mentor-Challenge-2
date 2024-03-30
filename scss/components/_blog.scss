@@ -1,0 +1,43 @@
+.blog{
+display: grid;
+grid-gap: 2rem;
+
+@media (width >= 70rem){
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+    grid-column: 1/4;
+    grid-template-rows: 3/4;
+    padding-block-start: 2.5rem;
+}
+    &__item{
+        display: grid;
+        grid-template-columns: 6.25rem auto;
+        grid-template-rows: repeat(3,auto);
+        gap: 0.5rem 2rem;
+    }
+    &__image{
+        grid-row: 1/4;
+       
+    }
+    &__headline{
+        align-self: flex-start;
+        a{
+            font-size: 1.1rem;
+            color: var(--c-blue);
+            font-weight: 700;
+            line-height: 1.1;
+        }
+    }
+    &__description{
+        align-self: end;
+        font-size: var(--f-body);
+        line-height: 1.7;
+        color: var(--c-gray);
+    }
+    &__number{
+        font-size: var(--f-md);
+        font-weight: 700;
+        color: var(--c-silver);
+    }
+
+}

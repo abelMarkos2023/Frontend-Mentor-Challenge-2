@@ -1,0 +1,50 @@
+.nav{
+    button{
+        background:none;
+        border: none;
+    }
+    &__open{
+        @media (width >= 70rem){
+            display: none;
+        }
+    }
+    .toggleContent{
+        //display: block;
+        translate: 0vw 0;
+    }
+    &__content{
+        z-index: 33;
+        @media (width < 70rem){
+            position: fixed;
+            inset: 0 0 0 7.5rem;
+            background-color: var(--c-white);
+            padding: 2rem;
+            transition: all 500ms ease-in-out;
+            display: none;
+            translate: 100vw 0;
+        }
+    }
+
+    &__overlay{
+        z-index: 3;
+        position: fixed;
+        inset: 0;
+        background-color:var(--c-blue);
+        opacity: 0;
+        display: none;
+        transition : opacity 300ms ease-in-out;
+        @media (width >= 70rem){
+            display: none;
+        }
+    }
+    &__close{
+        display: block;
+        margin-inline-start: auto;
+        margin-block-end: 5.5rem;
+
+        @media (width >= 70rem){
+            display: none;
+        }
+    }
+    
+}

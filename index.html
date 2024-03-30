@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Agency</title>
+    <link rel="stylesheet" href="/dist/styles.css">
+  </head>
+  <body id="body">
+   <header class="header wrapper">
+    <a href="/">
+      <img class="header__logo" src="/images/logo.svg" width="64" height="46" alt="">
+    </a>
+    <nav class="nav" aria-label="Site">
+      <button id="btnOpen" aria-labelledby="navigation" aria-expanded="false" class="nav__open">
+        
+        <span id="navigation" hidden>Navigation</span>
+        <svg width="40" height="17" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd"><path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z"/><path d="M0 0h40v3H0z"/></g></svg>
+      </button>
+      <div class="nav__overlay" id="overlay"></div>
+      <div class="nav__content" id="navContent">
+       
+        <button id="btnClose" class="nav__close">
+          <svg width="32" height="31" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd"><path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z"/><path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z"/></g></svg>
+        </button>
+        <ul class="links">
+          <li>
+            <a class="header__link" href="">Home</a>
+          </li>
+          <li>
+            <a class="header__link" href="">New</a>
+          </li>
+          <li>
+            <a class="header__link" href="">Popular</a>
+          </li>
+          <li>
+            <a class="header__link" href="">Trending</a>
+          </li>
+          <li>
+            <a class="header__link"  href="">Category</a>
+          </li>
+        </ul>
+      </div>
+      
+    </nav>
+   </header>
+
+   <main>
+    <article class="wrapper grid">
+      <section class="feature">
+        <picture class="feature__picture">
+          <source media="(min-width:43.75rem)" srcset="/images/image-web-3-desktop.jpg" width="730" height="300">
+          <img width="343" height="300" src="/images/image-web-3-mobile.jpg" alt="" class="feature__image">
+
+        </picture>
+        <h1 class="feature__headline">the bright future of web 3?</h1>
+        <div class="feature__description">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum assumenda maxime nostrum maiores esse officia, quas ea consequatur iste ullam?
+  
+          </p>
+          <a href="" class="feature__button">Read more</a>
+        </div>
+      </section>
+      <section class="new">
+        <h2>New</h2>
+        <article class="new__post">
+          <h3 class="new__headline">
+            <a href="">Hydrogen vs electric cars</a>
+          </h3>
+          <p class="new__description">
+            will hydrogen fueled cars ever catch up to electric ones
+          </p>
+        </article>
+        <article class="new__post">
+          <h3 class="new__headline">
+            <a href="">The downside of AI artistry</a>
+          </h3>
+          <p class="new__description">
+            What are the possible adverse effects of an on-demand AI image generation?
+          </p>
+        </article>
+        <article class="new__post">
+          <h3 class="new__headline">
+            <a href="">is PF drying up</a>
+          </h3>
+          <p class="new__description">
+            Private funding by VC firms is down 50% YOY. we take a look of what that means.
+          </p>
+        </article>
+      </section>
+      <section class="blog">
+        <article class="blog__item">
+          <img src="images/image-retro-pcs.jpg" alt="" class="blog__image">
+          <div class="blog__number">01</div>
+          <h3 class="blog__headline"><a href="">
+            Reviving Retro PCs
+          </a></h3>
+          <p class="blog__description">
+            what happens when we give old computer modern upgade
+          </p>
+        </article>
+        <article class="blog__item">
+          <img src="images/image-top-laptops.jpg" alt="" class="blog__image">
+          <div class="blog__number">02</div>
+          <h3 class="blog__headline"><a href="">
+            Top laptops of 2024
+          </a></h3>
+          <p class="blog__description">
+            Our best picks for various needs and budgets
+          </p>
+        </article>
+        <article class="blog__item">
+          <img src="/images/image-gaming-growth.jpg" alt="" class="blog__image">
+          <div class="blog__number">03</div>
+          <h3 class="blog__headline"><a href="">
+            The growth of gaming
+          </a></h3>
+          <p class="blog__description">
+            How 2020 pandemic has sparked new opportunities
+          </p>
+        </article>
+      </section>
+    </article>
+    
+   </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
